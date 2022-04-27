@@ -1,0 +1,5 @@
+cd /home
+wget https://github.com/sinsoio/mine_publish/archive/refs/tags/v1.1.5.tar.gz
+tar -xf v1.1.5.tar.gz
+cd mine_publish-1.1.5/ && chmod 755 sinso
+cp sinso.service /etc/systemd/system
