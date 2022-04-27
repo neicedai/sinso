@@ -1,10 +1,10 @@
 [Unit]
-Description=btfs
+Description=sinso
 
 [Service]
 User=root
-Environment=BTFS_PATH=/btfs/btfsl/.btfs
-ExecStart=/root/btfs/bin/btfs daemon --enable-gc
+#Environment=BTFS_PATH=/btfs/btfsl/.btfs
+ExecStart=/home/mine_publish-1.1.5/sinso
 #KillSignal=SIGINT # gracefully kill the process when stopping the service. Allows node to unregister cleanly.
 Restart=always
 RestartSec=10
