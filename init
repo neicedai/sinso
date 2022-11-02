@@ -1,6 +1,4 @@
 cp sinso.service /etc/systemd/system
 cd /home
-wget https://github.com/sinsoio/mine_publish/archive/refs/tags/v1.1.5.tar.gz
-tar -xf v1.1.5.tar.gz
-cd mine_publish-1.1.5/ && chmod 755 sinso
-./sinso start --full-node=true --swap-endpoint=https://data-seed-pressc-3.sinso.io
+wget https://github.com/sinsoio/mine_publish/raw/master/sinso
+chmod 777 sinso
