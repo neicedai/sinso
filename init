@@ -1,4 +1,5 @@
 cp sinso.service /etc/systemd/system
+mkdir /sinso
 cd /home
 wget https://github.com/sinsoio/mine_publish/raw/master/sinso
 chmod 777 sinso
