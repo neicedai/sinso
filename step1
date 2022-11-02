@@ -1,0 +1,2 @@
+cd /home
+./sinso start --swap-endpoint=https://data-seed-pressc-3.sinso.io --data-dir=/sinso/$1
