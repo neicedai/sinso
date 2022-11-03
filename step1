@@ -1,6 +1,4 @@
 cd /sinso
 mkdir $1
-cd /root/sinso
-cp config.yaml /sinso/$1
 cd /home
 ./sinso start --swap-endpoint=https://data-seed-pressc-3.sinso.io --data-dir=/sinso/$1
