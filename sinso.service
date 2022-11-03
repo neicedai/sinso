@@ -4,7 +4,7 @@ Description=sinso
 [Service]
 User=root
 #Environment=BTFS_PATH=/btfs/btfsl/.btfs
-ExecStart=/home/mine_publish-1.1.5/sinso start --full-node=true --swap-endpoint=https://data-seed-pressc-3.sinso.io
+ExecStart=/home/sinso start --full-node=true --swap-endpoint=https://data-seed-pressc-3.sinso.io --data-dir=/sinso/A --password=123
 #KillSignal=SIGINT # gracefully kill the process when stopping the service. Allows node to unregister cleanly.
 Restart=always
 RestartSec=10
