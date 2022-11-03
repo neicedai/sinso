@@ -1,7 +1,7 @@
 cd /root/sinso
 cp config.yaml /sinso/$1
-api=`expr $i + 2633`
-addr=`expr $i + 1633`
+api=`expr $1 + 2633`
+addr=`expr $1 + 1633`
 cd /sinso/$1
 sed -i 's#A#'$1'#g' config.yaml
 sed -i 's#B#'$api'#g' config.yaml
