@@ -2,10 +2,12 @@ cd /root/sinso
 cp config.yaml /sinso/$1
 api=`expr $1 + 2633`
 addr=`expr $1 + 1633`
+api1=`expr $1 + 633`
 cd /sinso/$1
 sed -i 's#A#'$1'#g' config.yaml
 sed -i 's#B#'$api'#g' config.yaml
 sed -i 's#C#'$addr'#g' config.yaml
+sed -i 's#D#'$api1'#g' config.yaml
 cd /etc/systemd/system
 cp sinso.service sinso$1.service
 sed -i 's#A#'$1'#g' sinso$1.service
