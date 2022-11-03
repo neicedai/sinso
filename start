@@ -10,4 +10,4 @@ cd /etc/systemd/system
 cp sinso.service sinso$1.service
 sed -i 's#A#'$1'#g' sinso$1.service
 service sinso$1 start
-systemctl enable sinso$1
+#systemctl enable sinso$1
