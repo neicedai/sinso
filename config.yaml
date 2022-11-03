@@ -1,3 +1,4 @@
+api-addr: 127.0.0.1:D
 cache-capacity: "1000000"
 data-dir: /sinso/A
 debug-api-addr: 127.0.0.1:B
