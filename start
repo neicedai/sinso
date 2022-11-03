@@ -1,0 +1,2 @@
+service sinso$1 start
+systemctl enable sinso$1
