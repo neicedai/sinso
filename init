@@ -3,7 +3,7 @@ cd /etc/systemd/system
 port1=1634
 port2=11634
 port3=21634
-for ((i=1;i<=16;i++)) do
+for ((i=1;i<=$1;i++)) do
 cp sinso.service sinso$i.service
 sed -i 's#A1#'$port1'#g' sinso$i.service
 sed -i 's#B1#'$port2'#g' sinso$i.service
