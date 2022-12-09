@@ -4,7 +4,7 @@ Description=sinso
 [Service]
 User=root
 #Environment=BTFS_PATH=/btfs/btfsl/.btfs
-ExecStart=/sinso/amd/sinso --manager-address=0xebb6b4d65075d22a916e99520a2759fc67fcf485 --data-dir=/sinso/D --password=12345678a --p2p-addr=:A --swap-endpoint=https://testnet-rpc.amstarscan.com --logger-file=node.log --api-addr=:B --debug-api-addr=:C --nat-addr=169.197.141.220:A start
+ExecStart=/sinso/amd/sinso --manager-address=0xebb6b4d65075d22a916e99520a2759fc67fcf485 --data-dir=/sinso/D1 --password=12345678a --p2p-addr=:A1 --swap-endpoint=https://testnet-rpc.amstarscan.com --logger-file=node.log --api-addr=:B1 --debug-api-addr=:C1 --nat-addr=169.197.141.220:A1 start
 #KillSignal=SIGINT # gracefully kill the process when stopping the service. Allows node to unregister cleanly.
 Restart=always
 RestartSec=10
