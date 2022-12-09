@@ -4,7 +4,7 @@ port1=1634
 port2=11634
 port3=21634
 for ((i=1;i<=16;i++)) do
-cp sinso.service sinso$1.service
+cp sinso.service sinso$i.service
 sed -i 's#A#'$port1'#g' sinso$1.service
 sed -i 's#B#'$port2'#g' sinso$1.service
 sed -i 's#C#'$port3'#g' sinso$1.service
