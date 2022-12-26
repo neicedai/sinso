@@ -1,8 +1,8 @@
 cp sinso.service /etc/systemd/system
 cd /etc/systemd/system
-port1=`expr 1634 + $1 -1`
-port2=`expr 11634 + $1 -1`
-port3=`expr 21634 + $1 -1`
+port1=`expr 1634 + $1 - 1`
+port2=`expr 11634 + $1 - 1`
+port3=`expr 21634 + $1 - 1`
 for ((i=$1;i<=$2;i++)) do
 cp sinso.service sinso$i.service
 sed -i 's#A1#'$port1'#g' sinso$i.service
